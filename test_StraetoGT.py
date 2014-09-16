@@ -25,6 +25,7 @@ class StraetoGT_TestCase(unittest.TestCase):
     def testUrlUnzipping(self):
         self.worker.initialize()
         self.worker.download_current_schedule()
+        self.worker.generate_stops()
 
 
 if __name__ == '__main__':
