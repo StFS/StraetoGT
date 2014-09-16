@@ -1,0 +1,26 @@
+<ferlar>
+<ferill nafn="1A" var="1,2,3,4,5,6,7,8,9">
+<variant var="1">
+<stop stod="14001655" lid="1" timi="11:36" stnum="1"/>
+<stop stod="14001638" lid="1" timi="11:37" stnum="2"/>
+<stop stod="14001638" lid="1" timi="11:37" stnum="2"/>
+<stop stod="14001639" lid="1" timi="11:38" stnum="3"/>
+<stop stod="90000776" lid="1" timi="00:20" stnum="40"/>
+<stop stod="90000295" lid="1" timi="00:22" stnum="41"/>
+</variant>
+
+<variant var="3,4,5,6,8">
+<stop stod="14001500" lid="1" timi="06:35" stnum="19"/>
+<stop stod="14001500" lid="1" timi="06:35" stnum="20"/>
+<stop stod="90000776" lid="1" timi="00:20" stnum="40"/>
+<stop stod="90000295" lid="1" timi="00:22" stnum="41"/>
+</variant>
+</ferill>
+
+<ferill nafn="1B" var="1,2,3,4,5,6,7,8,9">
+<variant var="1,2">
+<stop stod="90000295" lid="2" timi="11:45" stnum="1"/>
+<stop stod="90000775" lid="2" timi="11:47" stnum="2"/>
+</variant>
+</ferill>
+</ferlar>
