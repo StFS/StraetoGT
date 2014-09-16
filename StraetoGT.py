@@ -1,6 +1,6 @@
 import requests
 import xml.etree.ElementTree as ET
-import time, datetime
+import time
 
 TIME_FORMAT = '%Y%m%d'
 
