@@ -18,7 +18,6 @@ class Worker:
         for schedule in self.root.findall('aaetlun'):
             start = time.strptime(schedule.get('fra'), TIME_FORMAT)
             end = time.strptime(schedule.get('til'), TIME_FORMAT)
-            #timenow = time.gmtime()
             if start < timenow and timenow < end:
                 self.current_schedule_url = schedule.get('skra')
                 print('...found ' + self.current_schedule_url)
