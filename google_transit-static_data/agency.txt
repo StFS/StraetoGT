@@ -1,0 +1,2 @@
+agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
+Strætó,http://www.straeto.is/,Atlantic/Reykjavik,is,540-2700,http://www.straeto.is/kaupa-kort/gjaldskra/
