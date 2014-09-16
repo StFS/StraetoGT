@@ -1,3 +1,5 @@
+import appengine_config
+
 from flask import Flask
 app = Flask(__name__)
 app.config['DEBUG'] = True
@@ -16,3 +18,6 @@ def hello():
 def page_not_found(e):
     """Return a custom 404 error."""
     return 'Sorry, nothing at this URL.', 404
+
+if __name__ == '__main__':
+    app.run()

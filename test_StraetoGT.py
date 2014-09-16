@@ -1,3 +1,5 @@
+import appengine_config
+
 import os
 import unittest
 import threading
@@ -23,7 +25,6 @@ class StraetoGT_TestCase(unittest.TestCase):
     def testUrlUnzipping(self):
         self.worker.initialize()
         self.worker.download_current_schedule()
-
 
 
 if __name__ == '__main__':
