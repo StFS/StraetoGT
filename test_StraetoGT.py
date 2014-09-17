@@ -15,17 +15,16 @@ class StraetoGT_TestCase(unittest.TestCase):
     def setUp(self):
         handler = SimpleHTTPServer.SimpleHTTPRequestHandler
         self.httpd = SocketServer.TCPServer(("", 0), handler)
-        address = "http://localhost:{0}/test_data/".format(self.httpd.server_address[1])
-        self.worker = StraetoGT.Worker(address)
+        self.address = "http://localhost:{0}/test_data/".format(self.httpd.server_address[1])
         threading.Thread(target=self.httpd.serve_forever).start()
 
     def tearDown(self):
         self.httpd.shutdown()
 
-    def testUrlUnzipping(self):
-        self.worker.initialize()
-        self.worker.download_current_schedule()
-        self.worker.generate_stops()
+    def testAll(self):
+        worker = StraetoGT.Worker(self.address)
+        worker.generate_stops()
+        worker.generate_routes()
 
 
 if __name__ == '__main__':
